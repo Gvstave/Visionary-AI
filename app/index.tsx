@@ -1,13 +1,15 @@
 import NavBar from "@/components/nav-bar";
 import TranslationPanel from "@/components/transalation-panel";
 import ArBoundBox from "@/components/ui/ar-bound-box";
+import CameraComponent from "@/components/ui/camera-component";
 import Header from "@/components/ui/Header";
-import { Image, View } from "react-native";
+import { View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
   return (
     <SafeAreaView className="bg-backgroundDark">
+      <CameraComponent />
       <View className="bg-background-dark text-white font-display overflow-hidden h-screen w-full flex flex-col relative">
         <View className="absolute inset-0 z-0 w-full h-full bg-gray-900 overflow-hidden">
           <View className="absolute inset-0 bg-background-dark/20"></View>
